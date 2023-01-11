@@ -15,4 +15,9 @@ It creates an Auto MOde VPC network with firewall rules and two VM instances in 
 
     4. gcloud compute networks create mynetwork --subnet-mode=auto
     > Create an auto mode  VPC called mynetwork
+
+    5. gcloud compute firewall-rules create mynetwork-allow-custom --direction=INGRESS --network=mynetwork --action=ALLOW --rules=all
+    > deny-all-ingress and allow-all-egress rules 
+
+    6.
     
